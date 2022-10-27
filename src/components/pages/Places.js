@@ -4,7 +4,7 @@ import './../Cards.css'
 function Places() {
     return (
         <div className='cards'>
-            <h1>Check out these EPIC Destinations!</h1>
+            <h1 class ='text-2xl'>Check out these EPIC Destinations!</h1>
             <div className='cards__container'>
                 <div class="flex justify-center">
                     <div class="flex flex-col md:flex-row md:max-w-xl rounded-lg bg-white shadow-lg">
