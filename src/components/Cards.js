@@ -1,6 +1,7 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
+import { Link } from 'react-router-dom';
 
 function Cards() {
   return (
@@ -51,6 +52,7 @@ function Cards() {
           <span className="block text-indigo-600">Start your Planning your Trip Now !!!</span>
         </h2>
         <div className="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+        <Link to = '/services'>
           <div className="inline-flex rounded-md shadow">
             <a
               href="#"
@@ -59,6 +61,7 @@ function Cards() {
               Get started
             </a>
           </div>
+          </Link>
           <div className="ml-3 inline-flex rounded-md shadow">
             <a
               href="#"

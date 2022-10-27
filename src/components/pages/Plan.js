@@ -6,9 +6,7 @@ import './plan.css';
 function Plan() {
   return (
   <>
-  <div className='map-container'>
-    <SimpleMap/>
-  </div>
+  <SimpleMap/>
   <Place_card/>
   </>
   );
