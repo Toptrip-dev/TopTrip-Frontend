@@ -1,9 +1,0 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-.map-container{
-    height: 10cm;
-    width: 5cm;
-    align-self: center;
-}
