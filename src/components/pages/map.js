@@ -1,29 +1,3 @@
-// import {Map, InfoWindow, Marker, GoogleApiWrapper} from 'google-maps-react';
-// import React, { Component } from 'react';
-// import './plan.css';
- 
-// class SimpleMap extends Component {
-//   render() {
-//     return (
-//         // <Map google={this.props.google} zoom={14} >
- 
-//         //     <Marker onClick={this.onMarkerClick}
-//         //         name={'Current location'} />
- 
-//         //     <InfoWindow onClose={this.onInfoWindowClose}>
-//         //     </InfoWindow>
-//         // </Map>
-
-        
-//     );
-//   }
-// }
-
- 
-// export default GoogleApiWrapper({
-//   apiKey: ('AIzaSyDA0d4e-jZWyNgpN-vJXeYEIhOspv5SIoQ')
-// })(SimpleMap)
-
 import React from "react";
 import GoogleMapReact from 'google-map-react';
 
@@ -39,10 +13,10 @@ export default function SimpleMap(){
   };
 
   return (
-
-    <div style={{ height: '75vh', width: '100%' }}>
+    // Important! Always set the container height explicitly
+    <div style={{ height: '100vh', width: '100%' }}>
       <GoogleMapReact
-        bootstrapURLKeys={{ key: "AIzaSyDA0d4e-jZWyNgpN-vJXeYEIhOspv5SIoQ" }}
+        bootstrapURLKeys={{ key: "" }}
         defaultCenter={defaultProps.center}
         defaultZoom={defaultProps.zoom}
       >

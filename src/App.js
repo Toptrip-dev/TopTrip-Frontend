@@ -2,24 +2,27 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Services from './components/pages/Services';
-import Plan from './components/pages/Plan';
 import SignUp from './components/pages/SignUp';
 import Places from './components/pages/Places';
+import Plan from './components/pages/Plan';
+import Login from './components/pages/Login';
+
 
 function App() {
   return (
     <>
       <Router>
         <Navbar />
-        <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/services' component={Services} />
-          <Route path='/plan' component={Plan} />
-          <Route path='/sign-up' component={SignUp} />
-          <Route path='/places' component={Places}/>
-        </Switch>
+        <Routes>
+          <Route path='/' exact element={ <Home/> } />
+          <Route path='/services' element={ <Services/> } />
+          <Route path='/plan' element={ <Plan/> }/>
+          <Route path='/sign-up' element={<SignUp/>} />
+          <Route path='/places' element={<Places/>}/>
+          <Route path='/login' element={ <Login/> }/>
+        </Routes>
       </Router>
     </>
   );

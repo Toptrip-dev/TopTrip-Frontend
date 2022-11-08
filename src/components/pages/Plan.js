@@ -3,7 +3,7 @@ import SimpleMap from './map';
 import Place_card from './Place_card';
 import './plan.css';
 
-function Plan() {
+export default function Plan() {
   return (
   <>
   <SimpleMap/>
@@ -12,6 +12,5 @@ function Plan() {
   );
 }
 
-export default Plan
 
 

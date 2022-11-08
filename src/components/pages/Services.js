@@ -1,12 +1,24 @@
-import React from 'react';
+import React , {useState} from 'react';
 import { Link } from 'react-router-dom';
 import '../../App.css';
-import { Button } from '../Button';
+import Typography from '@material-ui/core/Typography';
+import Slider from '@material-ui/core/Slider';
+import { CgArrowsExchangeV } from 'react-icons/cg';
 
 export default function Services() {
+   // Our States
+   const [value, setValue] =  React.useState([500,1000]);
+  
+   // Changing State when volume increases/decreases
+   const rangeSelector = (event, newValue) => {
+     setValue(newValue);
+     console.log(newValue)
+   };
   return (
+
+    
     <div className="flex justify-center bg-slate-100 h-screen">
-  <div className="flex flex-col p-4 gap-4">
+  <div className="flex flex-col p-4 gap-4 min-w-max w-2/3">
     <h1 className="font-semibold text-2xl">Let's Plan you a TopTrip!</h1>
     <form className="flex flex-col p-3 gap-6 text-lg">
       <input
@@ -14,25 +26,31 @@ export default function Services() {
         className="rounded-full p-1 px-4"
         placeholder="Your location"
       />
-      <i className='fab fa-strava self-center'></i>
+     <div class="container w-12 self-center "><CgArrowsExchangeV/></div>
       <input
         type="text"
         className="rounded-full p-1 px-4"
         placeholder="Search Region or Place"
       />
-      <h2 className="text-gray-890 font-pontiac">Customize your way</h2>
-      <div className="shadow-lg text-sm text-gray-500 bg-white rounded p-2">
-        <p className="text-base mb-3">Budget: 200 - 1000 Rs</p>
-        <div className="flex">
-          <p className="w-8">Min</p>
-          <input type="range" />
-        </div>
-        <div className="flex">
-          <p className="w-8">Max</p>
-          <input type="range" />
-        </div>
-      </div>
-      <div className="shadow-lg text-sm text-gray-500 bg-white rounded">
+      <h2 className="text-gray-890 font-pontiac" style={{textAlign:'center'}}>Customize your way</h2>
+      <div style={{
+      margin: 'auto',
+      display: 'block',
+      minWidth: 'fit-content',
+      width: '3/4'
+    }}>
+      <h3 style={{textAlign:'center'}}>Customize Your TopTrip</h3>
+      <Typography id="range-slider" gutterBottom>
+        Select Your Price Range:
+      </Typography>
+      <Slider
+        value={value}
+        onChange={rangeSelector}
+        valueLabelDisplay="auto"
+      />
+      Your range of Price is between {value[0]} /- and {value[1]} /-
+    </div>
+      <div className="shadow-lg text-sm text-gray-500 bg-white rounded w-">
         <div className="border-b-[1px] border-gray-400 p-2">
           <p className="text-base">Select experiences</p>
         </div>
@@ -54,6 +72,7 @@ export default function Services() {
           </span>
         </div>
       </div>
+      
     </form>
   <div class="flex space-x-2 justify-center">
   <Link to ='/plan'>

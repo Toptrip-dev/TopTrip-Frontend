@@ -31,7 +31,7 @@ function Footer() {
             <h2>Contact Us</h2>
             <Link to='mailto:toptripofficial@gmail.com'>Contact</Link>
             <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
+            <Link to='/'>About Us</Link>
             <Link to='/'>Sponsorships</Link>
           </div>
         </div>
@@ -50,7 +50,7 @@ function Footer() {
           <div class='footer-logo'>
             <Link to='/' className='social-logo'>
               TopTrip
-              <i class='fab fa-typo3' />
+              <img src='images/logo.png' alt='logo' />
             </Link>
           </div>
           <small class='website-rights'>TopTrip © 2022</small>
