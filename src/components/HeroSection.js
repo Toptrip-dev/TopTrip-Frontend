@@ -4,27 +4,26 @@ import './HeroSection.css';
 
 function HeroSection() {
   return (
+    <>
+    <div className='topcontainer'>
+    <p className='text-center text-3xl'>Going For A Trip ?</p>
+    </div>
+    <div className='topcontainer'>
+    <p className='text-center text-5xl text-red-500/80'>Go Hassle Free With TopTrip!!</p>
+    </div>
     <div className='hero-container'>
-      <video src='/videos/video-1.mp4' autoPlay loop muted />
-      <h1>ADVENTURE IN GOA AWAITS</h1>
-      <p>What are you waiting for?</p>
-      <div className='hero-btns'>
+    </div>
+    <div className='hero-btns'>
         <Button
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
+
         >
-          GET STARTED
-        </Button>
-        <Button
-          className='btns'
-          buttonStyle='btn--primary'
-          buttonSize='btn--large'
-        >
-          WATCH TRAILER <i className='far fa-play-circle' />
+          Plan Trip Now!!
         </Button>
       </div>
-    </div>
+  </>
   );
 }
 

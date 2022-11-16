@@ -3,11 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@material-ui/core": "^4.12.4",
+    "@react-google-maps/api": "^2.17.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "antd": "^4.24.2",
     "autoprefixer": "^10.4.12",
+    "framer-motion": "^7.6.7",
     "framework7": "^7.0.8",
     "framework7-react": "^7.0.8",
     "google-map-react": "^2.2.0",
@@ -15,6 +20,7 @@
     "postcss": "^8.4.18",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-easy-swipe": "^0.0.22",
     "react-google-maps": "^9.4.5",
     "react-icons": "^4.6.0",
     "react-router-dom": "^6.4.2",
@@ -27,9 +33,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [

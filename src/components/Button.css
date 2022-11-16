@@ -17,21 +17,26 @@
 }
 
 .btn--outline {
-  background-color: transparent;
+  font-size: 30px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  background-color: #FF735C;
   color: #fff;
   padding: 8px 20px;
   border: 1px solid var(--primary);
+  border-radius: 15px;
+  height: 4.5rem;
   transition: all 0.3s ease-out;
 }
 
 .btn--medium {
   padding: 8px 20px;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .btn--large {
+  width: 40vh;
   padding: 12px 26px;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .btn--large:hover,

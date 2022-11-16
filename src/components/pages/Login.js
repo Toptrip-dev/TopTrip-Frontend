@@ -8,7 +8,7 @@ export default function Login() {
 <div class="w-full h-screen font-sans bg-cover bg-[url('images/bg-img.jpg')]">
     <div class="container flex items-center justify-center flex-1 h-full mx-auto">
     
-<div class="flex flex-col max-w-md px-4 py-8 bg-white rounded-lg shadow dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10">
+<div class="flex flex-col w-11/12 max-w-md px-4 py-8 bg-white rounded-lg shadow dark:bg-gray-800 sm:px-6 md:px-8 lg:px-10">
     <div class="self-center mb-2 text-xl font-light text-gray-800 sm:text-2xl dark:text-white">
         Create a new account
     </div>
@@ -47,7 +47,7 @@ export default function Login() {
                             </div>
                             <div class="flex w-full my-4">
                                 <button type="submit" class="py-2 px-4  bg-purple-600 hover:bg-purple-700 focus:ring-purple-500 focus:ring-offset-purple-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
-                                    Create Account
+                                    Login
                                 </button>
                             </div>
                         </form>

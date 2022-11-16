@@ -17,40 +17,41 @@ export default function Services() {
   return (
 
     
-    <div className="flex justify-center bg-slate-100 h-screen">
-  <div className="flex flex-col p-4 gap-4 min-w-max w-2/3">
-    <h1 className="font-semibold text-2xl">Let's Plan you a TopTrip!</h1>
-    <form className="flex flex-col p-3 gap-6 text-lg">
+<div className="flex justify-center bg-slate-100 h-screen">
+  <div className="flex flex-col p-2 gap-5 min-w-max w-2/3">
+    <p className="font-semibold text-4xl p-4 text-red-500/80" >Let's Plan you a TopTrip!</p>
+    <form className="flex flex-col p-2 gap-3 text-lg justify-center">
       <input
         type="text"
         className="rounded-full p-1 px-4"
         placeholder="Your location"
       />
-     <div class="container w-12 self-center "><CgArrowsExchangeV/></div>
+     <div class="container w-12 self-center "><CgArrowsExchangeV style ={{width:'2.5rem', height:'2.5rem'}}/></div>
       <input
         type="text"
         className="rounded-full p-1 px-4"
         placeholder="Search Region or Place"
       />
-      <h2 className="text-gray-890 font-pontiac" style={{textAlign:'center'}}>Customize your way</h2>
+      <div className ='flex h-1  bg-white mt-4 shadow-lg justify-center'></div>
+      <h2 className="text-gray-890 font-pontiac p-2 text-center text-2xl" >Customize your way</h2>
       <div style={{
-      margin: 'auto',
+      margin: '0rem 2rem',
       display: 'block',
       minWidth: 'fit-content',
       width: '3/4'
     }}>
-      <h3 style={{textAlign:'center'}}>Customize Your TopTrip</h3>
-      <Typography id="range-slider" gutterBottom>
+      <Typography id="range-slider" className=' text-3xl text-center' gutterBottom>
         Select Your Price Range:
       </Typography>
       <Slider
+      style={{color:'#ff735c'}}
         value={value}
         onChange={rangeSelector}
         valueLabelDisplay="auto"
       />
-      Your range of Price is between {value[0]} /- and {value[1]} /-
+      Your Price is between {value[0]} /- and {value[1]} /-
     </div>
-      <div className="shadow-lg text-sm text-gray-500 bg-white rounded w-">
+      <div className="shadow-lg text-sm text-gray-500 bg-white rounded ">
         <div className="border-b-[1px] border-gray-400 p-2">
           <p className="text-base">Select experiences</p>
         </div>
@@ -74,9 +75,9 @@ export default function Services() {
       </div>
       
     </form>
-  <div class="flex space-x-2 justify-center">
+  <div class="flex space-x-2 justify-center pt-2">
   <Link to ='/plan'>
-    <button type="button" class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Plan Now</button>
+    <button style={{backgroundColor:'#ff735c'}} class=" h-12 w-48 inline-block px-6 py-2.5 bg-orange-default before:text-white font-medium text-lg leading-tight uppercase rounded shadow-md hover:bg-orange-default hover:shadow-lg focus:bg-orange-default focus:shadow-lg focus:outline-none focus:ring-0 active:bg-orange-default active:shadow-lg transition duration-150 ease-in-out">Plan Now</button>
   </Link>
   </div>
   </div>

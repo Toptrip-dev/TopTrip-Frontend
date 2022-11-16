@@ -12,7 +12,7 @@ import Login from './components/pages/Login';
 
 function App() {
   return (
-    <>
+  <>
       <Router>
         <Navbar />
         <Routes>
