@@ -13,7 +13,7 @@ export const CarouselData = [
     },
     {
       image:
-        "images/img-5.jpg",
+        "images/img-1.jpg",
     },
     {
       image:
